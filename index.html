@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MasterCare Beauty Lifestyle & Nails</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styless.css">
 </head>
 <body>
   <!-- Header -->
@@ -24,7 +24,12 @@
 
   <!-- Hero Section -->
   <section id="home" class="hero">
-    <div class="container">
+    <div class="slideshow">
+      <div class="slide" style="background-image: url('images/image1.jpeg');"></div>
+      <div class="slide" style="background-image: url('images/image2.jpeg');"></div>
+      <div class="slide" style="background-image: url('images/image3.jpeg');"></div>
+    </div>
+    <div class="hero-content">
       <h2>Welcome to MasterCare</h2>
       <p>Your premium destination for beauty, grooming, skincare, and nail care services.</p>
       <a href="#services" class="btn">Explore Services</a>
@@ -109,52 +114,19 @@
     <div class="container">
       <p>&copy; 2025 MasterCare Beauty Lifestyle & Nails. All rights reserved.</p>
     </div>
-  </footer>
-
- <!--AI Assistant Icon
-  <div class="ai-assistant">
-    <img src="message-icon.png" alt="Message Icon" id="ai-icon">
-    <div id="ai-popup" class="hidden">
-      <p>Hi there! How can I assist you today?</p>
-    </div>
-  </div>
-
-  <script>
-    const aiIcon = document.getElementById('ai-icon');
-    const aiPopup = document.getElementById('ai-popup');
-
-    aiIcon.addEventListener('click', () => {
-      aiPopup.classList.toggle('hidden');
-    });
-  </script>=-->
-  <!-- AI Assistant Widget -->
+  </footer>  
+ <!-- AI Assistant Widget -->
 <div class="ai-assistant fixed bottom-8 right-8">
   <div class="icon-wrapper flex items-center justify-center w-16 h-16 bg-blue-600 rounded-full shadow-lg cursor-pointer">
     <img src="message-icon.png" alt="Message Icon" class="w-8 h-8" id="ai-icon" />
   </div>
   <div id="ai-popup" class="hidden mt-4 bg-white rounded-2xl shadow-xl p-4 max-w-xs">
-    <p class="text-gray-800 font-semibold">Hi there! How can I assist you today?</p>
-    <button class="close-btn text-gray-600 mt-2 hover:text-gray-900">Close</button>
+    <p class="text-gray-800 font-semibold">Hello there!</p>
+    <textarea id="ai-response" rows="3" class="p-2 w-full border border-gray-300 rounded-md" placeholder="How can I assist you?"></textarea>
+    <button id="ai-submit" class="mt-2 bg-blue-600 text-white py-1 px-4 rounded-md hover:bg-blue-800">Respond</button>
+    <button class="close-btn mt-2 text-gray-600 hover:text-gray-900">Close</button>
   </div>
 </div>
-
-<style>
-  .ai-assistant .hidden { display: none; }
-</style>
-
-<script>
-  const aiIcon = document.getElementById('ai-icon');
-  const aiPopup = document.getElementById('ai-popup');
-  const closeBtn = aiPopup.querySelector('.close-btn');
-
-  aiIcon.addEventListener('click', () => {
-    aiPopup.classList.toggle('hidden');
-  });
-
-  closeBtn.addEventListener('click', () => {
-    aiPopup.classList.add('hidden');
-  });
-</script>
-
+ <script src="script.js"></script>
 </body>
 </html>

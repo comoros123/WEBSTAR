@@ -1,0 +1,380 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background: #333;
+  color: #fff;
+  padding: 1.5rem 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #dfdb09;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/hero.jpg") no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 8rem 1rem;
+  position: relative;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.hero .btn {
+  background: #dfdb09;
+  color: #333;
+  padding: 0.8rem 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.hero .btn:hover {
+  background: #a14b60;
+  color: #fff;
+}
+
+/* Services Section */
+.services {
+  padding: 4rem 0;
+  background: #fff;
+}
+
+.services h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #dfdb09;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.service-item {
+  background: linear-gradient(135deg, #ffe6e6, #ffcbcb);
+  border-radius: 15px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.service-item:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.service-item h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #dfdb09;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.service-item p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* About Section */
+.about {
+  padding: 4rem 0;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #dfdb09;
+  font-weight: bold;
+}
+
+.about p {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* Contact Section */
+.contact {
+  padding: 4rem 0;
+  background: #fff;
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #dfdb09;
+  font-weight: bold;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.contact label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.contact textarea {
+  resize: none;
+}
+
+.contact button {
+  background: #dfdb09;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact button:hover {
+  background: #a14b60;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+/* AI Assistant Icon */
+.ai-assistant {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #dfdb09, #f4d03f);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.ai-assistant:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.ai-assistant img {
+  width: 40px;
+  height: 40px;
+}
+
+/* AI Assistant Popup */
+#ai-popup {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  max-width: 320px;
+  display: none;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+#ai-popup p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+#ai-response {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #333;
+  resize: none;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+#ai-submit {
+  background: #dfdb09;
+  color: #333;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  width: 100%;
+}
+
+#ai-submit:hover {
+  background: #a14b60;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.close-btn {
+  display: inline-block;
+  background: none;
+  border: none;
+  color: #999;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s;
+  margin-top: 0.5rem;
+  text-align: right;
+  width: 100%;
+}
+
+.close-btn:hover {
+  color: #333;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+  .ai-assistant {
+    width: 60px;
+    height: 60px;
+  }
+
+  .ai-assistant img {
+    width: 30px;
+    height: 30px;
+  }
+
+  #ai-popup {
+    bottom: 80px;
+    right: 10px;
+    max-width: 90%;
+    padding: 1rem;
+  }
+
+  #ai-popup p {
+    font-size: 1rem;
+  }
+
+  #ai-response {
+    font-size: 0.9rem;
+  }
+
+  #ai-submit {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .close-btn {
+    font-size: 0.8rem;
+  }
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
